@@ -88,7 +88,7 @@ final class UpdatePayPalOrderAction
             (string) $request->request->get('orderID'),
             $payment,
             $payment->getDetails()['reference_id'],
-            $gatewayConfig->getConfig()['merchant_id'],
+            $gatewayConfig->getConfig()['merchant_id']
         );
 
         return new JsonResponse($response);
