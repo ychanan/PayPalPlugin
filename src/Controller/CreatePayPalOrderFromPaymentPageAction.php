@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Sylius\PayPalPlugin\Controller;
 
-use Doctrine\Persistence\ObjectManager;
+use Doctrine\Common\Persistence\ObjectManager;
 use GuzzleHttp\Exception\GuzzleException;
 use SM\Factory\FactoryInterface;
 use Sylius\Component\Core\Model\OrderInterface;

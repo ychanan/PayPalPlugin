@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Sylius\PayPalPlugin\Manager;
 
-use Doctrine\Persistence\ObjectManager;
+use Doctrine\Common\Persistence\ObjectManager;
 use SM\Factory\FactoryInterface;
 use Sylius\Component\Core\Model\PaymentInterface;
 use Sylius\Component\Payment\PaymentTransitions;

@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Sylius\PayPalPlugin\Updater;
 
-use Doctrine\Persistence\ObjectManager;
+use Doctrine\Common\Persistence\ObjectManager;
 use Sylius\Component\Core\Model\PaymentInterface;
 
 final class PayPalPaymentUpdater implements PaymentUpdaterInterface
