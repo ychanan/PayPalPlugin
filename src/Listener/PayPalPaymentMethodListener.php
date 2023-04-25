@@ -51,14 +51,6 @@ final class PayPalPaymentMethodListener
             return;
         }
 
-        if ($this->isTherePayPalPaymentMethod()) {
-            $this->flashBag->add('error', 'sylius.pay_pal.more_than_one_seller_not_allowed');
-
-            $event->setResponse(new RedirectResponse($this->urlGenerator->generate('sylius_admin_payment_method_index')));
-
-            return;
-        }
-
         if (!$this->onboardingInitiator->supports($paymentMethod)) {
             return;
         }
